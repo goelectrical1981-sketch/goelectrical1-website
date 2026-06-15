@@ -1,0 +1,41 @@
+/* Hero Section Background & Overlay */
+.hero-section {
+    background: url("building22.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 82, 186, 0.85), rgba(30, 41, 59, 0.85));
+    z-index: 1;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus Styles */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0F52BA;
+    box-shadow: 0 0 0 1px #0F52BA;
+}
+
+/* Hover Transitions */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Shadow Enhancements */
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
