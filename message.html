@@ -1,45 +1,94 @@
-<!-- ✅ NETLIFY FORM - SIGURADONG GAGANA AGAD -->
-<form 
-  name="contact-us" 
-  method="POST" 
-  data-netlify="true" 
-  action="/salamat.html"
-  class="bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-xl text-left"
->
-  <!-- Kinakailangan ito para makilala ng Netlify ang form -->
-  <input type="hidden" name="form-name" value="contact-us">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GO Electrical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    colors: { 
+                        primary: '#0F52BA', 
+                        secondary: '#FF6B00', 
+                        dark: '#1E293B' 
+                    } 
+                } 
+            } 
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 bg-gray-50">
 
-  <div class="grid md:grid-cols-2 gap-6 mb-6">
-    <div>
-      <label class="block text-gray-700 font-medium mb-2">Your Name</label>
-      <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-    </div>
-    <div>
-      <label class="block text-gray-700 font-medium mb-2">Email Address</label>
-      <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-    </div>
-  </div>
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="goelectrical.png" alt="GO" class="h-10 w-auto">
+                <h1 class="text-xl font-bold text-primary">Electrical Engineering</h1>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+                <a href="services.html" class="font-medium hover:text-primary transition-colors">Services</a>
+                <a href="about.html" class="font-medium hover:text-primary transition-colors">About</a>
+                <a href="contact.html" class="font-medium text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <div class="grid md:grid-cols-2 gap-6 mb-6">
-    <div>
-      <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
-      <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-    </div>
-    <div>
-      <label class="block text-gray-700 font-medium mb-2">Service Needed</label>
-      <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-        <option value="">Select a Service</option>
-        <option value="Design & Planning">Electrical Design & Planning</option>
-        <option value="Installation & Construction">Installation & Constructions</option>
-        <option value="Maintenance & Inspection">Maintenance & Safety Inspections</option>
-      </select>
-    </div>
-  </div>
+    <section class="py-32 relative bg-cover bg-center bg-no-repeat" style="background-image: url('electricalnew.png');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-white mb-12 drop-shadow-md">Send Us a Message</h2>
 
-  <div class="mb-6">
-    <label class="block text-gray-700 font-medium mb-2">Message / Details of Project</label>
-    <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Tell us about your project, location, and requirements..."></textarea>
-  </div>
+            <!-- ✅ NETLIFY FORM - MAY DISENYO AT GUMAGANA -->
+            <form 
+                name="contact-us" 
+                method="POST" 
+                data-netlify="true" 
+                action="/salamat.html"
+                class="bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-xl text-left"
+            >
+                <input type="hidden" name="form-name" value="contact-us">
 
-  <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all shadow-lg hover:shadow-xl">SEND MESSAGE</button>
-</form>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Service Needed</label>
+                        <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                            <option value="">Select a Service</option>
+                            <option value="Design & Planning">Electrical Design & Planning</option>
+                            <option value="Installation & Construction">Installation & Construction</option>
+                            <option value="Maintenance & Inspection">Maintenance & Safety Inspection</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Message / Details of Project</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Tell us about your project, location, and requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all shadow-lg hover:shadow-xl">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
